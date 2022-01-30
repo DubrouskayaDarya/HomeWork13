@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FII-1r-HPM">
-                                <rect key="frame" x="230" y="136" width="159" height="31"/>
+                                <rect key="frame" x="246.5" y="108" width="142.5" height="31"/>
                                 <color key="tintColor" systemColor="tintColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Create an account"/>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="syo-YX-HwN">
-                                <rect key="frame" x="25" y="208" width="364" height="247.5"/>
+                                <rect key="frame" x="25" y="188" width="364" height="247.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWt-kI-Zbg">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="29"/>
@@ -73,15 +73,21 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="1" green="0.98630905400000002" blue="0.85755632609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="syo-YX-HwN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="120" id="93p-0h-tTh"/>
-                            <constraint firstItem="FII-1r-HPM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="230" id="H4o-9Y-l3x"/>
-                            <constraint firstItem="FII-1r-HPM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="48" id="UBg-qG-nSO"/>
+                            <constraint firstItem="syo-YX-HwN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="93p-0h-tTh"/>
+                            <constraint firstItem="FII-1r-HPM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="H4o-9Y-l3x"/>
+                            <constraint firstItem="FII-1r-HPM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="UBg-qG-nSO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="FII-1r-HPM" secondAttribute="trailing" constant="25" id="WLZ-BY-KG6"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="syo-YX-HwN" secondAttribute="trailing" constant="25" id="gpY-Rf-mqs"/>
                             <constraint firstItem="syo-YX-HwN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="oGN-pi-ioa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lp7-zR-Kiu"/>
+                    <connections>
+                        <outlet property="emailText" destination="4Px-K4-h1y" id="ojR-pC-EXs"/>
+                        <outlet property="labelUserNotFound" destination="3k5-Xj-7Oi" id="f9e-4e-LLQ"/>
+                        <outlet property="password" destination="DzQ-jH-fTb" id="RFz-7w-HnH"/>
+                        <outlet property="signInButton" destination="mvs-Ut-g7Q" id="iXd-Zj-iom"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
