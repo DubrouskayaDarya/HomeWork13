@@ -83,9 +83,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="lp7-zR-Kiu"/>
                     <connections>
-                        <outlet property="emailText" destination="4Px-K4-h1y" id="ojR-pC-EXs"/>
+                        <outlet property="emailTextField" destination="4Px-K4-h1y" id="dhQ-kj-1X0"/>
                         <outlet property="labelUserNotFound" destination="3k5-Xj-7Oi" id="f9e-4e-LLQ"/>
-                        <outlet property="password" destination="DzQ-jH-fTb" id="RFz-7w-HnH"/>
+                        <outlet property="passwordTextField" destination="DzQ-jH-fTb" id="e1p-X6-izY"/>
                         <outlet property="signInButton" destination="mvs-Ut-g7Q" id="iXd-Zj-iom"/>
                     </connections>
                 </viewController>

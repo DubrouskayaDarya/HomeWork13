@@ -19,6 +19,7 @@
 		9282756427A53D8100CCD66A /* CodeVerifVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282756327A53D8100CCD66A /* CodeVerifVC.swift */; };
 		9282756627A53D9700CCD66A /* WelcomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282756527A53D9700CCD66A /* WelcomVC.swift */; };
 		9282756C27A6E56C00CCD66A /* VerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282756B27A6E56C00CCD66A /* VerificationService.swift */; };
+		9282756F27AC13B800CCD66A /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9282756E27AC13B800CCD66A /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9282756327A53D8100CCD66A /* CodeVerifVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerifVC.swift; sourceTree = "<group>"; };
 		9282756527A53D9700CCD66A /* WelcomVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomVC.swift; sourceTree = "<group>"; };
 		9282756B27A6E56C00CCD66A /* VerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationService.swift; sourceTree = "<group>"; };
+		9282756E27AC13B800CCD66A /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		9282754727A53B5500CCD66A /* HomeWork13 */ = {
 			isa = PBXGroup;
 			children = (
+				9282757027AC13D400CCD66A /* Extensions */,
 				9282756D27A6E57000CCD66A /* Services */,
 				9282756727A53DA200CCD66A /* Controllers */,
 				9282756027A53CF000CCD66A /* Views */,
@@ -131,6 +134,14 @@
 				9282756B27A6E56C00CCD66A /* VerificationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9282757027AC13D400CCD66A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9282756E27AC13B800CCD66A /* UIViewControllerExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			files = (
 				9282756C27A6E56C00CCD66A /* VerificationService.swift in Sources */,
 				9282754D27A53B5500CCD66A /* SignInVC.swift in Sources */,
+				9282756F27AC13B800CCD66A /* UIViewControllerExt.swift in Sources */,
 				9282756627A53D9700CCD66A /* WelcomVC.swift in Sources */,
 				9282754927A53B5500CCD66A /* AppDelegate.swift in Sources */,
 				9282756227A53D6700CCD66A /* CreateAccountVC.swift in Sources */,

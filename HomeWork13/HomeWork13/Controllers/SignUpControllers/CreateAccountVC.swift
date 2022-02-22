@@ -44,14 +44,14 @@ class CreateAccountVC: UIViewController {
         errorEmail.isHidden = isEmailValid
     }
     
-    @IBAction func inputEmailEditingChanged() {
+    @IBAction private func inputEmailEditingChanged() {
         isEmailValid = VerificationService.isValidEmail(inputEmail.text ?? "")
         if isEmailValid {
             errorEmail.isHidden = true
         }
     }
     
-    @IBAction func passwordFirstEditingChanged() {
+    @IBAction private func passwordFirstEditingChanged() {
         let passwordStrenght = VerificationService.isValidPassword(pass: passwordFirst.text ?? "")
         switch passwordStrenght {
         case .veryWeak:
@@ -88,7 +88,7 @@ class CreateAccountVC: UIViewController {
         isPasswordValid = passwordStrenght == .strong
     }
     
-    @IBAction func passwordSecondEditingChanged() {
+    @IBAction private func passwordSecondEditingChanged() {
         let isPassConfirm = VerificationService.isPassConfirm(pass1: passwordFirst.text ?? "", pass2: passwordSecond.text ?? "")
         passwordMatchingError.isHidden = isPassConfirm
         isPasswordConfirmed = isPassConfirm
@@ -102,21 +102,30 @@ class CreateAccountVC: UIViewController {
         }
     }
 
-    @IBAction func signUpButtonTapped() {
+    @IBAction private func signUpButtonTapped() {
     }
 
-    func setupUI() {
+    private func setupUI() {
         signUpButton.isEnabled = false
         signUpButton.layer.cornerRadius = 8.0
     }
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    
+//    @IBAction func buttonSignUpAction() {
+//        performSegue(withIdentifier: "goToCodeVerifVC", sender: nil)
+//    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        guard let email = inputEmail.text,
+            let name = name.text,
+            let password = passwordFirst.text,
+            let destVC = segue.destination as? CodeVerifVC else { return }
 
+        destVC.email = email
+        destVC.name = name
+        destVC.password = password
+    }
+    
 }
